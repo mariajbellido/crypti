@@ -1,8 +1,11 @@
 {
-  "name": "cryptoreactsite",
+  "name": "crypti",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "api",
+    "crypto"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "axios": "0.26.1",

@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
   return (
     <header className="header">
       <nav className="container">
         <h1>
           Cryp<span className="primary">ti</span>
         </h1>
-        <ul className="nav-menu">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <a href="/">Home</a>
           </li>
@@ -26,8 +30,12 @@ const Navbar = () => {
         <div className="btn-group">
           <button className="btn">Connect Wallet</button>
         </div>
-        <div className="hamburger">
-          <FaBars />
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes size={20} style={{ color: "#333" }} />
+          ) : (
+            <FaBars size={20} style={{ color: "#333" }} />
+          )}
         </div>
       </nav>
     </header>
