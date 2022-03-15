@@ -2,6 +2,7 @@ import "./styles.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Featured from "./components/Featured";
+import Signup from "./components/Signup";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Featured />
+      <Signup />
     </>
   );
 }
