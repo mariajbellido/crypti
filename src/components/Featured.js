@@ -35,7 +35,7 @@ const Featured = () => {
         {/* Right side */}
         <div className="right">
           {data.map((data) => (
-            <Card key={data.id} />
+            <Card key={data.id} data={data} />
           ))}
         </div>
       </section>
