@@ -7,9 +7,9 @@ const Footer = () => {
     <section className="footer">
       <div className="container">
         <div className="col col-1">
-          <h1>
-            De<span className="primary">Fi</span>
-          </h1>
+          <h2>
+            Cryp<span className="primary">ti</span>
+          </h2>
         </div>
         <div className="col">
           <h5>Support</h5>
