@@ -22,3 +22,9 @@
 .signup .right p {
   margin: 2rem 0;
 }
+
+@media screen and (max-width) {
+  .signup .container {
+    grid-template-columns: 1fr;
+  }
+}
