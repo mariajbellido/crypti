@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.css";
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
 
 const Card = (props) => {
@@ -14,12 +13,12 @@ const Card = (props) => {
       </div>
       {props.data.price_change_percentage_24h < 0 ? (
         <span className="red">
-          <FiArrowDown />
+          <FiArrowDown className="icon" />
           {props.data.price_change_percentage_24h.toFixed(2)}%
         </span>
       ) : (
         <span className="green">
-          <FiArrowUpRight />
+          <FiArrowUpRight className="icon" />
           {props.data.price_change_percentage_24h.toFixed(2)}%
         </span>
       )}
